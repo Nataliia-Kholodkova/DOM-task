@@ -101,6 +101,11 @@ const card = document.querySelector('.card');
 
 // menuItems.forEach(item => item.addEventListener('click', toggleCatalog));
 menu.addEventListener('click', toggleCatalog);
+menu.addEventListener('keyup', function (event) {
+    if (event.keyCode === 32) {
+        toggleCatalog(event);
+    }
+});
 
 // Animate appearance of the card
 function animate(item) {
