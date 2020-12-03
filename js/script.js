@@ -95,11 +95,12 @@ const catalogItemsList = [
     },
 ];
 
+const menu = document.querySelector('.catalog-list');
 const menuItems = document.querySelectorAll('.catalog-link');
 const card = document.querySelector('.card');
 
-menuItems.forEach(item => item.addEventListener('click', toggleCatalog));
-
+// menuItems.forEach(item => item.addEventListener('click', toggleCatalog));
+menu.addEventListener('click', toggleCatalog);
 
 // Animate appearance of the card
 function animate(item) {
